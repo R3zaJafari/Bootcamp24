@@ -1,0 +1,63 @@
+.background{
+    background-image: url('public/BingWallpaper.jpg');
+    font-family: Helvetica, sans-serif
+}
+
+.top-navbar{
+    /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+}
+
+.microsoftLogo{
+    width: 25px;
+}
+
+.copilot{
+    width: 20px;
+}
+
+.sign-in-icon{
+    width: 60px;
+}
+
+.sun-icon{
+    width:35px;
+}
+
+.capture-icon{
+    width: 45px;
+}
+
+.mic-icon{
+    width: 32px;
+    color: aquamarine;
+}
+
+.search-input{
+    margin-top:65px ;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.inside-input{
+    width: 80%;
+    height: 2.1rem;
+    
+    padding: 0px;
+    border: none;
+}
+.inside-input:focus{
+    border: none;
+    outline-style: none;
+}
+
+.search-icon{
+    width: 35px;
+}
+.trophy{
+    width: 75px;
+}
+
+.menu-last{
+    width: 45px;
+}

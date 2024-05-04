@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/search-line-icon.png" type="image/icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <title>Bing</title>
+</head>
+<body class="background">   
+    <div id="top-navbar" class="top-navbar flex	 justify-around  p-2 items-center">
+        
+        <div class="left-logo flex items-center	">
+            <img class="microsoftLogo m-2" src="public/microsoft-icon.png" alt="">
+            <h2 class="text-white font-bold text-base text-nowrap pr-10">Microsoft Bing</h2>
+        </div>
+
+        <div class="middle-option flex text-white items-center">
+            <img class="copilot m-1" src="public/copilot-icon.png" alt="">
+            <a href="#" class="pr-10 text-xs">Copilot</a>
+            <a href="#"class="pr-10 text-xs">Images</a>
+            <a href="#" class="pr-10 text-xs">Videos</a>
+            <a href="#"class="pr-10 text-xs">Maps</a>
+            <a href="#"class="pr-4 text-xs">News</a>
+           
+               <!-- Dropdown menu -->
+            
+            <div class="group relative cursor-pointer py-2">
+        
+                <div class="flex items-center justify-between space-x-5  px-4">
+                    <a class="pr-10 text-lg pb-2 menu-hover my-2  text-base font-medium text-white lg:mx-4 pr-10 text-lg pb-4" onClick="">
+                        ...
+                    </a>
+                </div>
+        
+                <div
+                    class="invisible absolute z-50 flex w-full flex-col bg-gray-100 py-1 px-2 mx-10 text-gray-800 shadow-xl rounded-lg group-hover:visible">
+        
+                    <a class="my-2 block border-b border-gray-100 py-1  text-xs text-gray-500 hover:text-black md:mx-2">
+                        Translate
+                    </a>
+        
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        Travel
+                    </a>
+                    <hr>
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        Msn
+                    </a>
+        
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        TakeLesson
+                    </a>
+        
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        Health
+                    </a>
+        
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        Online Game
+                    </a>
+        
+                    <a class="my-2 block border-b border-gray-100 py-1 text-xs text-gray-500 hover:text-black md:mx-2">
+                        Microsoft 365
+                    </a>
+        
+                </div>
+            </div>
+        </div>
+           
+
+        <div class="left-option flex text-white items-center">
+            <a href="#" class="pr-2 text-xs">mashhad</a>
+            <img class="sun-icon pr-2" src="public/sun.png" alt="">
+            <a href="#" class="pr-6 text-xs">15 C ^</a>
+            <a href="#" class="pr-8 text-xs">suomi</a>
+            <a href="#" class="pr-8 text-xs">Svenska</a>
+            <a href="#" class="pr-3  text-xs text-nowrap">Sign in</a>
+            <img class="sign-in-icon pr-7" src="public/user_person_profile_avatar_icon_190943.png" alt="">
+            <a href="#" class=" text-xs">Rewards</a>
+            <img class="trophy pr-5" src="public/trophy.png" alt="">
+            <a href="#" class="text-xs">Mobile</a>
+            <img class="sign-in-icon pr-7" src="public/smartphone.png" alt="">
+            <img id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="menu-last pr-7" src="public/menu.png" alt="men">
+            
+        
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Collection</a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Safe Search</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Search History</a>
+                </li>
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My bing</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Privecy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">FeedBack </a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Apearence</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">light</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">dark</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">system default</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Personlize you feed</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">custom your home page</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">show menu bar</a>
+                </li>
+
+                <li>
+                    <a href="#" class="block px-4 py-2 bg-gray-100 text-xs text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">show news and interest</a>
+                </li>
+                </ul>
+            </div>
+                
+        </div>
+    </div>
+
+    <center>
+        <div class="search-input p-1 bg-white rounded-3xl flex items-center">
+            <input class="inside-input m-1 pl-5 text-lg"/>
+            <a href=""><img class="mic-icon     pr-4" src="public/microphone-line-icon.png" alt="n"></a>
+            <a href=""><img class="capture-icon pr-4" src="public/capture.png" alt="6"></a>
+            <a href=""><img class="search-icon  pr-4" src="public/search-line-icon.png" alt="nothig"></a>
+        </div>
+    </center>
+
+
+
+    <div class="bottom-images flex w-full justify-around absolute bottom-8">
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">something abc</h2>
+            <img  class="rounded-bottom" src="bottom/th.jpeg" alt="">
+        </div>
+
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">something mosfa</h2>
+            <img  src="bottom/th-2.jpeg" alt="">
+        </div>
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">reza jafri salim</h2>
+            <img  src="bottom/th-3.jpeg" alt="">
+        </div>
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">jeffry way akbari</h2>
+            <img  src="bottom/th.jpeg" alt="">
+        </div>
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">some toppic</h2>
+            <img  src="bottom/th-2.jpeg" alt="">
+        </div>
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">snamp one two</h2>
+            <img  src="bottom/th-3.jpeg" alt="">
+        </div>
+        <div class="rounded-lg bg-black text-white overflow-hidden">
+            <h2 class="p-2 text-sm">where are you still</h2>
+            <img  src="bottom/th.jpeg" alt="">
+        </div>
+     
+     
+    </div>
+    
+
+    
+ 
+    
+
+    
+</body>
+</html>
