@@ -61,3 +61,31 @@
 .menu-last{
     width: 45px;
 }
+
+.arrow-right{
+    width: 40px;
+    transform: rotate(180deg);
+}
+
+.arrow-left{
+    width: 40px;
+}
+
+.arrow-down{
+    width: 20px;
+    transform: rotate(90deg);
+}
+
+.location-icon{
+    width: 25px;
+}
+
+.bottom-right-left{
+    width: 35px;
+    transform: rotate(180deg);
+}
+
+.bottom-right-right{
+    width: 35px;
+    
+}
