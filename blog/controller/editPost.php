@@ -3,4 +3,6 @@
     
     $posts = json_decode($jsonPosts);
 
+    $id = $_GET['id'];
+    $post = $posts[$id];
 ?>

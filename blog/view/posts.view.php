@@ -9,25 +9,24 @@
 </head>
 <body>
     <center>
+        
         <div class="m-10">
-            <a class= "m-10 p-2 rounded-lg  border font-medium text-blue-600 dark:text-blue-500 hover:underline" href="./createPost.view.php">create contect</a>
+            <div class="flex justify-center">
+                <a class= "m-10 p-2 rounded-lg  border font-medium text-blue-600 dark:text-blue-500 hover:underline" href="./createPost.view.php">create contect</a>
+                <a href="managePage.view.php" class=" m-10 p-2 rounded-lg  border font-medium text-blue-600 dark:text-blue-500 hover:underline">manage Page</a>
+            </div>
             <br>
             <br>
             <h2>
-            <?php 
-
-                if(isset($_REQUEST['body']))
-                {
-                    $data[] = array($_REQUEST['body']);
-
-                    $inp = file_get_contents('results.json');
-                    $tempArray = json_decode($inp);
-                    array_push($tempArray, $data);
-                    $jsonData = json_encode($tempArray);
-                    file_put_contents('results.json', $jsonData);
+                <?php foreach($posts as $key => $post){ 
+                    echo "<div class='border rounded w-8/12 m-2'>";
+                    echo "<h2> post number $key<h2>";
+                    echo "<h1>$post</h1>";
+                    echo "</div>";
                 }
-            ?> 
+                ?>
             </h2>
+            
         </div>  
     </center>        
 </body>

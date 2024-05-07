@@ -8,7 +8,7 @@
     <?php require(__DIR__.'/../links.php') ?>
 </head>
 <body>
-<a href="posts.view.php" class=" m-10 p-2 rounded-lg  border font-medium text-blue-600 dark:text-blue-500 hover:underline">return to posts</a>
+<a href="posts.view.php" class=" m-10 p-2 rounded-lg  border font-medium text-blue-600 dark:text-blue-500 hover:underline">show all posts</a>
 
 <div class="w-full max-w-xs">
   <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" >
@@ -38,7 +38,7 @@
   if(isset($_REQUEST['head']))
   {
       $post = new post;
-      $post->createpost($_GET['head'] , $_GET['body']);
+      $post->createpost($_GET['body']);
   }
   ?>
 
