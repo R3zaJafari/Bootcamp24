@@ -15,6 +15,6 @@
 
         $signUp->signUpUser();
 
-        header("location: ../view/signUp.view.php?error=query none");
+        header("location: ../view/signUp.view.php?error=you are success fully registred");
     }
 ?>
