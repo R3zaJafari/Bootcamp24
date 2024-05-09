@@ -16,6 +16,5 @@
 
         $logIn->logInUser();
 
-        header("location: ../view/logout.view.php?error=you are logged in");
     }
 ?>
