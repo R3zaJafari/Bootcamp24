@@ -1,3 +1,8 @@
+<?php
+  if(isset($_COOKIE['email'])){
+    header('location:../view/logout.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +12,7 @@
 <body>
             <?php
                 if(isset($_REQUEST['error'])) 
-                echo "<p class='text-green-500 text-sm m-2' >".  $_REQUEST['error'] ."</p>" 
+                echo "<p class='text-red-500 text-sm m-2' >".  $_REQUEST['error'] ."</p>" 
             ?>
   <a class="p-2 bg-blue-500 rounded-lg m-2 text-white"  href="SignUp.view.php">Go to SignUp</a>
   <div class="w-full max-w-xs">
